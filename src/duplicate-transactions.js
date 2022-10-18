@@ -1,11 +1,8 @@
 function findDuplicateTransactions(transactions) {
-  if (!Array.isArray(transactions) || typeof transactions !== "object") {
+  if (!Array.isArray(transactions)) {
     throw Error;
   }
 
-  if (!transactions) {
-    return [];
-  }
   function timeinsec(time) {
     const newtime = new Date(time).getTime() / 1000;
     return newtime;
