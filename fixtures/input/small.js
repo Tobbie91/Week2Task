@@ -6,7 +6,7 @@ module.exports = [
     amount: 100,
     category: 'eating_out',
     time: '2018-03-02T10:34:30.000Z',
-  },
+  },                  
   {
     id: 1,
     sourceAccount: 'A',

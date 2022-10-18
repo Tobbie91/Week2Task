@@ -34,10 +34,12 @@ function findDuplicateTransactions(transactions) {
       }
     }
     for (let i = 0; i < buffer.length - 1; i++) {
-      if (Math.abs(timeinsec(buffer[i].time) - timeinsec(buffer[i + 1].time))> 59) {
-        buffer = buffer.slice(0, i+1);
-      
-      break;
+      if (
+        Math.abs(timeinsec(buffer[i].time) - timeinsec(buffer[i + 1].time)) > 59
+      ) {
+        buffer = buffer.slice(0, i + 1);
+
+        break;
       }
     }
     for (let i = 0; i < buffer.length; i++) {
